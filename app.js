@@ -131,7 +131,7 @@ app.get('/reset-slots', (req, res) => {
 // Helper function to parse conversational date in Australia/Sydney and convert to ISO 8601 in UTC
 function parseConversationalDate(conversationalDate) {
     try {
-        const now = DateTime.now().setZone('Australia/Sydney');
+        const now = DateTime.now().setZone('America/Toronto');
         let targetDate = now;
         let dayOfWeek = null;
         let timeString = null;
